@@ -12,5 +12,11 @@ public class TestController {
 	public String testMethod() {
 		return "Testing Method Executes";
 	}
+	
+	@GetMapping("/method1")
+	public String method1() {
+		return "Testing Method1";
+	}
+	
 
 }
