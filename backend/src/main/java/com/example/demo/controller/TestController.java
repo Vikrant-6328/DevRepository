@@ -13,4 +13,10 @@ public class TestController {
 		return "Testing Method Executes";
 	}
 
+	//i will make a second method to test the scenario
+	@GetMapping("/checkMethod")
+	public String checkMethod(){
+		return "Method checked Successfully";
+	}
+
 }
