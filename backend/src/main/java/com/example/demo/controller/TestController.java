@@ -7,15 +7,20 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/v1")
 public class TestController {
-   
+
 	@GetMapping("/testMethod")
 	public String testMethod() {
 		return "Testing Method Executes";
 	}
 
-	//i will make a second method to test the scenario
+	@GetMapping("/method1")
+	public String method1() {
+		return "Testing Method1";
+	}
+
+	// i will make a second method to test the scenario
 	@GetMapping("/checkMethod")
-	public String checkMethod(){
+	public String checkMethod() {
 		return "Method checked Successfully";
 	}
 
